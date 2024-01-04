@@ -22,7 +22,7 @@ public class TicTacToe {
         int row = 0;
         int col = 0;
         int inp; // user input buffer
-        String setBy; // stores player who already set the cell
+        String setBy = 'N'; // stores player who already set the cell
 
         // game loop
         while (isGameActive) {
