@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to CyberCitadel's TicTacToe game. Have fun!");
 
-        TicTacToe game = new TicTacToe()
-        game.start()
+        TicTacToe game = new TicTacToe();
+        game.start();
 
         System.out.printf("%nThank you for playing! Developed by:%n");
         System.out.println("  • Nusrat Jahan Meem (ic23b079)");
