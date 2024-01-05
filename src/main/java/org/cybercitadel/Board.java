@@ -38,4 +38,20 @@ public class Board {
             return Character.toString(' ');
         }
     }
+
+    public void print() {
+        for (int x = 0; x < 3; x++) {
+            for (int y = 0; y < 3; y++) {
+                System.out.printf("%C", cells[x][y]);
+                if (y < 2) {
+                    System.out.print(" | ");
+                }
+            }
+            System.out.println();
+            if (x < 2) {
+                System.out.println("---------");
+            }
+        }
+        System.out.println();
+    }
 }
