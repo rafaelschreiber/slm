@@ -27,6 +27,7 @@ public class TicTacToe {
         // game loop
         while (isGameActive) {
             System.out.printf("%nCurrent Player: %C%n", currentPlayer.getMarker());
+            board.print();
 
             // input loop
             while (true) {
@@ -62,7 +63,6 @@ public class TicTacToe {
                 board.place(row, col, currentPlayer.getMarker());
                 break;
             }
-            System.out.printf("Cell (%d|%d) was set by player %s.%n", row, col, setBy);
             switchCurrentPlayer();
         }
     }
