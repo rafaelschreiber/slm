@@ -39,6 +39,17 @@ public class Board {
         }
     }
 
+    public boolean isFull() {
+        for (int x = 0; x < 3; x++) {
+            for (int y = 0; y < 3; y++) {
+                if (cells[x][y] == ' ') {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
     public void print() {
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {
