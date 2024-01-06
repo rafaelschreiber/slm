@@ -32,6 +32,8 @@ public class BoardTest {
         board.place(1, 2, 'N');
         assertEquals(Character.toString(' '), board.getCell(1, 2));
     }
+
+    @Test
     public void Test_isFull() {
         Board board = new Board();
         board.place(0, 0, 'X');

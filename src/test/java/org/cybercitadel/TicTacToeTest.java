@@ -13,6 +13,8 @@ public class TicTacToeTest {
         game.switchCurrentPlayer();
         assertEquals('X', game.getCurrentPlayer().getMarker());
     }
+
+    @Test
     public void Test_hasWinner() {
         TicTacToe game = new TicTacToe();
         game.getBoard().place(0, 0, 'X');
