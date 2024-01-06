@@ -32,4 +32,19 @@ public class BoardTest {
         board.place(1, 2, 'N');
         assertEquals(Character.toString(' '), board.getCell(1, 2));
     }
+    public void Test_isFull() {
+        Board board = new Board();
+        board.place(0, 0, 'X');
+        board.place(0, 1, 'X');
+        board.place(0, 2, 'X');
+        board.place(1, 0, 'X');
+        board.place(1, 1, 'X');
+        board.place(1, 2, 'X');
+        board.place(2, 0, 'X');
+        board.place(2, 1, 'X');
+        board.place(2, 2, 'N');
+        assertFalse(board.isFull());
+        board.place(2, 2, 'o');
+        assertTrue(board.isFull());
+    }
 }
