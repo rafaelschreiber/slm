@@ -122,5 +122,8 @@ public class TicTacToe {
             return 'N'; // return if winner not decided
         }
     }
+    protected Board getBoard() {
+        return board;
+    }
 }
 
